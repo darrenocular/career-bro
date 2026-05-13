@@ -53,6 +53,8 @@ logs/
 .env
 *.properties.local
 *.yml.local
+application-local.yml
+application-local.yaml
 
 ### Operating System ###
 .DS_Store

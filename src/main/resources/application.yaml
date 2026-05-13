@@ -1,0 +1,29 @@
+spring:
+  application:
+    name: career-bro
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/career_bro
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: validate        # Flyway manages schema, not Hibernate
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.CamelCaseToUnderscoresNamingStrategy
+    show-sql: true              # logs SQL queries — useful while learning
+    properties:
+      hibernate:
+        format_sql: true
+        jdbc:
+          time_zone: UTC
+
+  flyway:
+    enabled: true
+    locations: classpath:db/migration
+
+server:
+  port: 8080
