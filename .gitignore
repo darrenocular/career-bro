@@ -1,0 +1,60 @@
+### Java ###
+*.class
+*.jar
+*.war
+*.ear
+*.ctxt
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+# Package Files #
+*.zip
+*.tar.gz
+*.rar
+# Virtual machine crash logs
+hs_err_pid*
+
+### Build Tools ###
+# Maven
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+# Avoid ignoring Maven wrapper jar file
+!/.mvn/wrapper/maven-wrapper.jar
+
+# Gradle
+.gradle
+**/build/
+!**/src/**/build/
+gradle-app.setting
+!gradle-wrapper.jar
+.gradletasknamecache
+
+### IDE Specifics ###
+# IntelliJ IDEA
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+
+### Spring Boot Specifics ###
+*.log
+logs/
+.sts4-cache/
+.springBeans
+
+# Local environment files (contains secrets)
+.env
+*.properties.local
+*.yml.local
+
+### Operating System ###
+.DS_Store
+Thumbs.db
+Desktop.ini
